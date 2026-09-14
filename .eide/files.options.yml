@@ -1,0 +1,32 @@
+##########################################################################################
+#                        Append Compiler Options For Source Files
+##########################################################################################
+
+version: "2.0"
+options:
+    Debug:
+        files:
+            # 抑制第三方库警告（逐飞库 + TI DriverLib + SysConfig 生成文件）
+            "source/core/zf_common/zf_common_function.c":
+                "-w"
+            "source/core/zf_common/zf_common_clock.c":
+                "-w"
+            "source/core/zf_device/zf_device_gs08ra.c":
+                "-w"
+            "source/core/zf_device/zf_device_ips200.c":
+                "-w"
+            "source/core/zf_device/zf_device_ips200pro.c":
+                "-w"
+            "source/core/zf_device/zf_device_tft180.c":
+                "-w"
+            "source/core/zf_device/zf_device_wifi_spi.c":
+                "-w"
+            "source/core/zf_driver/zf_driver_spi.c":
+                "-w"
+            "source/core/zf_driver/zf_driver_adc.c":
+                "-w"
+            "source/core/zf_driver/zf_driver_pit.c":
+                "-w"
+            "ti_msp_dl_config.c":
+                "-w"
+        virtualPathFiles: {}

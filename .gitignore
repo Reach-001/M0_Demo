@@ -1,0 +1,29 @@
+# 构建输出
+build/
+*.o
+*.d
+*.elf
+*.hex
+*.bin
+*.map
+*.lst
+
+# IDE / 编辑器
+.eide/.log/
+.vscode/settings.json
+.vscode/launch.json
+*.code-workspace
+
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# 日志
+*.log
+
+# 临时文件
+*.tmp
+*.bak
+*.swp
+*~
+.trash*/

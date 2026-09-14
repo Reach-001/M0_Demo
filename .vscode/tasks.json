@@ -1,0 +1,45 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "type": "shell",
+            "command": "${command:eide.project.build}",
+            "options": { "env": { "PATH": "/usr/local/share/dotnet:${env:PATH}" } },
+            "group": "build",
+            "problemMatcher": []
+        },
+        {
+            "label": "flash",
+            "type": "shell",
+            "command": "${command:eide.project.uploadToDevice}",
+            "options": { "env": { "PATH": "/usr/local/share/dotnet:${env:PATH}" } },
+            "group": "build",
+            "problemMatcher": []
+        },
+        {
+            "label": "build and flash",
+            "type": "shell",
+            "command": "${command:eide.project.buildAndFlash}",
+            "options": { "env": { "PATH": "/usr/local/share/dotnet:${env:PATH}" } },
+            "group": "build",
+            "problemMatcher": []
+        },
+        {
+            "label": "rebuild",
+            "type": "shell",
+            "command": "${command:eide.project.rebuild}",
+            "options": { "env": { "PATH": "/usr/local/share/dotnet:${env:PATH}" } },
+            "group": "build",
+            "problemMatcher": []
+        },
+        {
+            "label": "clean",
+            "type": "shell",
+            "command": "${command:eide.project.clean}",
+            "options": { "env": { "PATH": "/usr/local/share/dotnet:${env:PATH}" } },
+            "group": "build",
+            "problemMatcher": []
+        }
+    ]
+}
